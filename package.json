@@ -1,0 +1,44 @@
+{
+  "name": "test-chat-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "cp -R node_modules/materialize-css/dist/* www; rm www/css/materialize.css www/js/materialize.js",
+    "start": "webpack-dev-server --config webpack-dev-config.js --progress --inline --colors",
+    "build": "webpack --config webpack-prod.config.js --progress --colors",
+    "serve": "babel ./src/server.js | node ",
+    "start:prod": "npm run build ; npm run serve",
+    "test": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "materialize-css": "^0.97.8",
+    "react": "15.0.1",
+    "react-dom": "15.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.17.0",
+    "css-loader": "^0.26.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-config-airbnb-base": "8.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.3.0",
+    "html-webpack-plugin": "^2.7.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

@@ -1,0 +1,14 @@
+.collection {
+ margin-bottom:130px;
+ overflow-y: scroll;
+ margin-top: -1px;
+ height: 85vh;
+}
+
+.date {
+  color: #585858;
+}
+
+body {
+  background: #EEEEEE;
+}
