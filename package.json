@@ -7,7 +7,7 @@
     "prestart": "cp -R node_modules/materialize-css/dist/* www; rm www/css/materialize.css www/js/materialize.js",
     "start": "webpack-dev-server --config webpack-dev-config.js --progress --inline --colors",
     "build": "webpack --config webpack-prod.config.js --progress --colors",
-    "serve": "babel ./src/server.js | node ",
+    "serve": "node ./src/server.js",
     "start:prod": "npm run build ; npm run serve",
     "test": "eslint ./src"
   },
@@ -21,7 +21,6 @@
     "react-dom": "15.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
     "babel-core": "^6.3.26",
     "babel-eslint": "^7.0.0",
     "babel-loader": "^6.2.4",
