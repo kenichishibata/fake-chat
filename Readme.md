@@ -1,6 +1,9 @@
 # Fake-Chat
 A fake chat UI without any serverside implementation. Only the dev server uses express server side and you can also use the server.js for production webserver to serve the static build files
 
+# Demo
+http://chat.kenichishibata.net/
+
 # Installation
 ```
 npm install 
