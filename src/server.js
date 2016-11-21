@@ -4,6 +4,7 @@ import path from 'path';
 const app = express();
 app.use(express.static(path.join(__dirname, '/build')));
 
-app.listen(3000, () =>
-  console.log('running at 3000')
+const PORT = process.env.PORT || 8888;
+app.listen(PORT, () =>
+  console.log(`static server running @ ${PORT}`)
 );

@@ -6,7 +6,7 @@ const buildPath = path.resolve(__dirname, 'build');
 const modulesPath = path.resolve(__dirname, 'node_modules');
 
 const config = {
-  entry: [path.join(__dirname, '/src/app.js')],
+  entry: [path.join(__dirname, '/src/App.js')],
   devtool: 'source-map',  // production sized devtool
   output: {
     path: buildPath,
